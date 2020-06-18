@@ -1,0 +1,1 @@
+{"transactionId":"42323","transactionStatus":{"transactionStatus":"fail","error":{"exceptionId":"SVC1020","exceptionText":"Business Error","moreInfo":"Business Error from backend","userMessage":"Business Error: Cliente cuenta con orden MT en vuelo"}}}

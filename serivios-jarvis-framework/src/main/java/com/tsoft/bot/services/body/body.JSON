@@ -1,0 +1,83 @@
+{
+  "correlationId": "Ejemplo SAS",
+  "productOrderType": "residential",
+  "priority": 1,
+  "relatedParty": [
+    {
+      "id": "343344343",
+      "href": "/customers/343344343",
+      "name": "JOSE;BECERRA,REGALADO",
+      "nationalID": "56874532",
+      "nationalIDType": "DNI",
+      "role": "customer"
+    },
+    {
+      "id": "343344343",
+      "href": "/customers/343344343",
+      "name": "JOSE;BECERRA,REGALADO",
+      "nationalID": "56874532",
+      "nationalIDType": "DNI",
+      "role": "user"
+    }
+  ],
+  "channel": [
+    {
+      "id": "APPHOGAR",
+      "href": "/channels/343344343",
+      "name": "APP HOGAR",
+      "description": "Aplicación Movistar para clientes"
+    }
+  ],
+  "requestedStartDate": "2020-03-19T23:31:31.220Z",
+  "orderItem": [
+    {
+      "id": "1",
+      "description": "CAPL LMA",
+      "action": "modify",
+      "productOffering": {
+        "id": "53426374",
+        "name": "Ofertas LMA"
+      },
+      "product": {
+        "id": "3635252",
+        "href": "/products/3635252",
+        "name": "mobile",
+        "publicId": "987654567",
+        "productType": "mobile",
+        "description": "mobile",
+        "relatedParty": [
+          {
+            "id": "343344343",
+            "href": "/customers/343344343",
+            "name": "JOSE;BECERRA,REGALADO",
+            "nationalID": "56874532",
+            "nationalIDType": "DNI",
+            "role": "user"
+          }
+        ]
+      },
+      "quantity": "1",
+      "minQuantity": "1",
+      "maxQuantity": "1",
+      "additionalData": [
+        {
+          "value": "3645254263"
+        },
+        {
+          "value": "BOCODE"
+        },
+        {
+          "value": "Plan LMA 80"
+        },
+        {
+          "value": "500.00"
+        }
+      ]
+    }
+  ],
+  "additionalData": [
+    {
+      "value": "945876543"
+    }
+  ]
+}
