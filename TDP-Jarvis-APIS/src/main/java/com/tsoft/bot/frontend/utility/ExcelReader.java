@@ -3,6 +3,7 @@ package com.tsoft.bot.frontend.utility;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -150,12 +151,27 @@ public class ExcelReader {
 
             Font font = newWorkbook.createFont();
 
-            font.setColor(HSSFColor.GREEN.index);
 
-            style.setFont(font);
 
             nextCell.setCellValue(resultText);
 
+            if(resultText.contains("true") || resultText.contains("PASS"))
+            {
+                style.setFillForegroundColor(IndexedColors.LIGHT_GREEN.getIndex());
+                style.setFillPattern(CellStyle.SOLID_FOREGROUND);
+                nextCell.setCellStyle(style);
+
+            }if(resultText.contains("false") || resultText.contains("FAILED"))
+            {
+                style.setFillForegroundColor(IndexedColors.CORAL.getIndex());
+                style.setFillPattern(CellStyle.SOLID_FOREGROUND);
+                nextCell.setCellStyle(style);
+            }if(resultText.contains("{\"HeaderOut\":{"))
+            {
+                style.setFillForegroundColor(IndexedColors.WHITE.getIndex());
+                style.setFillPattern(CellStyle.SOLID_FOREGROUND);
+                nextCell.setCellStyle(style);
+            }
             fs.close();
 
             FileOutputStream outputStream = new FileOutputStream(rutaFile);
@@ -171,7 +187,5 @@ public class ExcelReader {
         }
         return null;
     }
-
-
 
 }

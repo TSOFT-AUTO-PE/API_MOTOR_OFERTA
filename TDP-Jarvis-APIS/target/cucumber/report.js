@@ -55,11 +55,11 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 7301935600,
+  "duration": 166966900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 70232800,
+  "duration": 6099810000,
   "status": "passed"
 });
 formatter.scenario({
@@ -85,11 +85,11 @@ formatter.match({
   "location": "Steps_ServiciosAlta.seEjecutaElServicioAltaAlta()"
 });
 formatter.result({
-  "duration": 2786369200,
+  "duration": 6302528700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 821705300,
+  "duration": 752348300,
   "status": "passed"
 });
 });

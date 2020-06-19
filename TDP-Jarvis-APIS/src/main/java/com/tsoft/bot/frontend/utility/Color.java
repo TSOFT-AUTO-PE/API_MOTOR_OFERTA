@@ -22,9 +22,9 @@ public class Color {
         CellStyle style = workbook.createCellStyle();
         style.setFillForegroundColor(IndexedColors.GREEN.getIndex());
         style.setFillPattern(CellStyle.SOLID_FOREGROUND);
-        Font font = workbook.createFont();
-        font.setColor(IndexedColors.RED.getIndex());
-        style.setFont(font);
+        //Font font = workbook.createFont();
+        //font.setColor(IndexedColors.RED.getIndex());
+        //style.setFont(font);
 
         Cell cell1 = row.createCell(0);
         cell1.setCellValue("ID");
@@ -32,7 +32,7 @@ public class Color {
 
         Cell cell2 = row.createCell(1);
         cell2.setCellValue("NAME");
-        cell2.setCellStyle(style);
+        //cell2.setCellStyle(style);
 
         FileOutputStream fos =new FileOutputStream(new File("E:/xlsx/cp.xlsx"));
         workbook.write(fos);

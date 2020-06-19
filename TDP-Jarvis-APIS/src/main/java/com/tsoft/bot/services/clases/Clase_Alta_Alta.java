@@ -23,7 +23,7 @@ public class Clase_Alta_Alta{
         return ExcelReader.data(EXCEL_WEB, HOJA);
     }
 
-    public static void showData() throws Throwable {
+    public static String showData(String status) throws Throwable {
 
         //Se ingresa el ENDPOINT mediante el excel:
         String endPoint = getData().get(0).get(CELDA_ENDPOINT);
@@ -46,6 +46,7 @@ public class Clase_Alta_Alta{
         HttpResponse response = cliente.execute(post);
         System.out.println("Resultado: " + response.getStatusLine().getStatusCode());
         System.out.println("Endpoint: " + endPoint);
+        status = response.getStatusLine().getStatusCode() + "";
 
         BufferedReader br = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
         String line = "";
@@ -63,43 +64,31 @@ public class Clase_Alta_Alta{
 
 
         //Código adicional para comparativas y validaciones:
-        String valor1 = "23322";
-        String valor2 = "Movistar Total 13GB TV Estándar Digital HD 200Mbps";
-        String valor3 = "175.0";
-        String valor4 = "30000";
-        String valor5 = "43.0";
-        String valor6 = "13000";
-        String valor7 = "132.0";
-        String valor8 = "43.0";
-        String valor9 = "De alta velocidad para compartir PasaGigas y usar en America y Europa.";
-
-
+        String []escenario1 = {"23322", "Movistar Total 13GB TV Estándar Digital HD 200Mbps", "175.0", "30000", "43.0",
+                                "13000", "132.0", "43.0", "De alta velocidad para compartir PasaGigas y usar en America y Europa."};
 
         ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 2, resultado);
-        ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 3, "" + valor1 + ": " + resultado.contains(valor1));
-        ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 4, "" + valor2 + ": " + resultado.contains(valor2));
-        ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 5, "" + valor3 + ": " + resultado.contains(valor3));
-        ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 6, "" + valor4 + ": " + resultado.contains(valor4));
-        ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 7, "" + valor5 + ": " + resultado.contains(valor5));
-        ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 8, "" + valor6 + ": " + resultado.contains(valor6));
-        ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 9, "" + valor7 + ": " + resultado.contains(valor7));
-        ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 10, "" + valor8 + ": " + resultado.contains(valor8));
-        ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 11, "" + valor9 + ": " + resultado.contains(valor9));
-
-        if ((resultado.contains(valor1) && resultado.contains(valor2) && resultado.contains(valor3) &&
-                resultado.contains(valor4) && resultado.contains(valor5) && resultado.contains(valor6) &&
-                resultado.contains(valor7) && resultado.contains(valor8) && resultado.contains(valor9))==true)
+        if ((resultado.contains(escenario1[0]) && resultado.contains(escenario1[1]) && resultado.contains(escenario1[2]) &&
+            resultado.contains(escenario1[3]) && resultado.contains(escenario1[4]) && resultado.contains(escenario1[5]) &&
+            resultado.contains(escenario1[6]) && resultado.contains(escenario1[7]) && resultado.contains(escenario1[8])))
         {
-            ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 12, "OK");
+            ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 12, "PASS");
         }
         else
         {
-            ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 12, "FALLIDO");
+            ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, 12, "FAILED");
+        }
+
+        for (int i = 0; i < escenario1.length; i++)
+        {
+            ExcelReader.writeCellValue(EXCEL_WEB, HOJA, 1, i + 3, "" + escenario1[i] + ": " + resultado.contains(escenario1[i]) + i);
         }
 
         //Cierre de ejecución:
         pw.close();
         pw.flush();
+
+        return status;
     }
 
 }

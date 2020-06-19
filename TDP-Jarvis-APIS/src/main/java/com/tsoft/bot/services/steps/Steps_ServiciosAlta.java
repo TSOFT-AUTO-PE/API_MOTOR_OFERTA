@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 
 public class Steps_ServiciosAlta extends BaseClass {
     private WebDriver driver;
+    private String statusResult = "";
+    private String stado = "";
 
     public Steps_ServiciosAlta() {
         this.driver = Hook.getDriver();
@@ -16,9 +18,9 @@ public class Steps_ServiciosAlta extends BaseClass {
     @Given("^Se ejecuta el servicio alta alta$")
     public void seEjecutaElServicioAltaAlta() throws Throwable {
         try {
-            Clase_Alta_Alta.showData();
-            stepPass(driver, "El servicio fue ejecutado correctamente");
-
+            Clase_Alta_Alta.showData(stado);
+            statusResult = Clase_Alta_Alta.showData(stado);
+            stepPass(driver, "El servicio fue ejecutado correctamente\n" + " Status: " + statusResult + "\n Time: ");
         }
         catch (Exception we)
         {
