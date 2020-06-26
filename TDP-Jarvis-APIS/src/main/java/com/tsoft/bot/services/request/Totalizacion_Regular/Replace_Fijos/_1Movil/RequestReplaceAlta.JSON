@@ -1,0 +1,70 @@
+{
+  "HeaderIn": {
+    "country": "PE",
+    "lang": "es",
+    "entity": "TDP",
+    "system": "WebConv",
+    "subsystem": "WebConv",
+    "originator": "PE:TDP:WebConv:WebConv",
+    "sender": "Bluemix",
+    "userId": "AppUser",
+    "wsId": "BluemixTelefonica",
+    "wsIp": "10.11.11.11",
+    "operation": "requestOffers",
+    "destination": "PE:TDP:WebConv:WebConv",
+    "execId": "5cb89812-0eb3-0eb3-0eb3-0eb328561952",
+    "timestamp": "2019-06-13T17:06:33.346+00:00",
+    "msgType": "REQUEST"
+  },
+  "BodyIn": {
+    "commOperationInfo": {
+      "commercialOpers": [
+        {
+          "operation": "replaceOffer",
+          "operationCommId": 746,
+          "product": "fijo",
+          "subscriber": {
+            "subscriberId": "176124",
+            "serviceNumber": "12218913",
+            "type": "trio"
+          }
+        },
+        {
+          "deviceOperation": "LineactivationProvide",
+          "operation": "provide",
+          "operationCommId": 748,
+          "product": "movil",
+          "saleMode": "alta combo",
+          "creditData": {
+            "action": "APROBAR",
+            "financeValue":0,
+            "creditScore": "3580",
+            "product": "movil",
+            "creditLimit": 260,
+            "aditionalLines": 2
+          }
+        }
+      ],
+      "coverage": "HFC",
+      "dealerCode": "04815",
+      "department": "02",
+      "negotiationMode": "ventas",
+      "productType": "mt",
+      "province": "01",
+      "salesChannel": "ST",
+      "storeBrand": "04815",
+      "storeId": "04815001",
+      "salesChannelType": "TIENDAS FRANQUICIAS",
+      "salesEntity": "CISESAC",
+      "salesPoint": "CISESAC-HUARAZ"
+    },
+    "customer": {
+      "customerSubType": "RMV",
+      "customerType": "R",
+      "documentNumber": "00098127",
+      "documentType": "DNI",
+      "isEmployee": true
+    },
+    "queryType": "soloPlanes"
+  }
+}

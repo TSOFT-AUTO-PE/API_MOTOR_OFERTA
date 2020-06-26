@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TDP-Service-Jarvis-APIS" />
-        <module name="serivios-jarvis-framework" />
-        <module name="TDP-Jarvis-APIS" />
         <module name="web-automation-framework" />
+        <module name="TDP-Jarvis-APIS" />
+        <module name="serivios-jarvis-framework" />
       </profile>
     </annotationProcessing>
   </component>

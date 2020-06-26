@@ -13,7 +13,7 @@ import java.util.List;
 
 public class EjemploServices {
 
-    private static final String EXCEL_WEB = "services/excel/Movistar.xlsx";
+    private static final String EXCEL_WEB = "excel/services/Movistar.xlsx";
     private static final String MOVISTAR = "Input";
     private static final String CELDA_ENDPOINT_TOKEN = "Endpoint_Token";
     private static final String CELDA_ENDPOINT_2 = "Endpoint_2";

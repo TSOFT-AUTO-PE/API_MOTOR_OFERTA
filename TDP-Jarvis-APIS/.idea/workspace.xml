@@ -49,23 +49,25 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Servicios\TDP-Jarvis-APIS\src\main\java\com\tsoft\bot\services\request\Totalizacion_Regular\Altas_Fijos\_1Movil" />
       <recent name="C:\Users\admin\Desktop\Servicios\TDP-Jarvis-APIS\src\main\java\com\tsoft\bot\services\request" />
-      <recent name="D:\TdP\AUTOMATIZACION\APIS\FrameworkBaseWEB\web-automation-framework\src\main\resources\services\excel" />
-      <recent name="D:\TdP\AUTOMATIZACION\APIS\FrameworkBaseWEB\web-automation-framework\src\main\resources" />
-      <recent name="D:\TdP\AUTOMATIZACION\APIS\FrameworkBaseWEB\web-automation-framework\src\main\resources\front" />
-      <recent name="D:\TdP\AUTOMATIZACION\APIS\FrameworkBaseWEB\web-automation-framework\src\main\resources\front\config\config" />
+      <recent name="C:\Users\admin\Desktop\Servicios\TDP-Jarvis-APIS\src\main\resources\excel\services" />
+      <recent name="C:\Users\admin\Desktop\Servicios\TDP-Jarvis-APIS\src\main\resources\excel\services\" />
+      <recent name="C:\Users\admin\Desktop\Servicios\TDP-Jarvis-APIS\src\main\resources\services\excel\MotorOferta" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tsoft.bot.services.clases.Totalizacion_Regular.Replace_Fijos._1Movil" />
+      <recent name="com.tsoft.bot.services.clases.Totalizacion_Regular.Altas_Fijos._1Movil" />
       <recent name="com.tsoft.bot.services.clases" />
       <recent name="com.tsoft.bot.services.clases.altas" />
       <recent name="com.tsoft.bot.services.steps" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Servicios\TDP-Jarvis-APIS\src\main\java\com\tsoft\bot\services\request\Totalizacion_Regular\Replace_Fijos\_1Movil" />
       <recent name="D:\TdP\AUTOMATIZACION\ServicioJarvis\serivios-jarvis-framework\src\main\resources\services\excel" />
       <recent name="D:\TdP\AUTOMATIZACION\FrameworkWeb-Servicios\web-automation-framework\src\main\resources\services\excel" />
       <recent name="D:\TdP\AUTOMATIZACION\APIS\FrameworkBaseWEB\web-automation-framework\src\main\java\com\tsoft\bot\services\response" />
       <recent name="D:\TdP\AUTOMATIZACION\APIS\FrameworkBaseWEB\web-automation-framework\src\main\java\com\tsoft\bot\services\body" />
-      <recent name="D:\TdP\AUTOMATIZACION\APIS\FrameworkBaseWEB\web-automation-framework\src\main\java\com\tsoft\bot\frontend\body" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -80,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.RunTest (2)">
+  <component name="RunManager" selected="Cucumber java.Feature: ServiciosJarvis">
     <configuration name="Color" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tsoft.bot.frontend.utility.Color" />
       <module name="TDP-Jarvis-APIS" />
@@ -165,10 +167,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: ServiciosJarvis" />
         <item itemvalue="TestNG.RunTest (2)" />
         <item itemvalue="TestNG.RunTest (3)" />
         <item itemvalue="Application.Color" />
-        <item itemvalue="Cucumber java.Feature: ServiciosJarvis" />
         <item itemvalue="TestNG.RunTest (1)" />
       </list>
     </recent_temporary>

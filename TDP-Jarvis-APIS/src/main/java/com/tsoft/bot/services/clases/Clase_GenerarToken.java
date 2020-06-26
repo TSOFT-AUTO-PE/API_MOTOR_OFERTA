@@ -13,7 +13,7 @@ import java.util.List;
 
 public class Clase_GenerarToken {
 
-    private static final String EXCEL_WEB = "services/excel/Movistar.xlsx";
+    private static final String EXCEL_WEB = "excel/services/Movistar.xlsx";
     private static final String MOVISTAR = "Input";
     private static final String CELDA_ENDPOINT_TOKEN = "Endpoint_Token";
 

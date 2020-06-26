@@ -1,12 +1,9 @@
 package com.tsoft.bot.services.clases;
 
 import com.tsoft.bot.frontend.utility.ExcelReader;
-import freemarker.ext.servlet.HttpRequestParametersHashModel;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.InputStreamEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 
 import java.io.*;
@@ -15,7 +12,7 @@ import java.util.List;
 
 public class Clase_Servicio2 {
 
-    private static final String EXCEL_WEB = "services/excel/Servicio2.xlsx";
+    private static final String EXCEL_WEB = "excel/services/Servicio2.xlsx";
     private static final String Servicio = "Input";
     private static final String CELDA_ENDPOINT_TOKEN = "Endpoint_Servicio2";
     private static final String CELDA_TELEFONO = "Telefono";

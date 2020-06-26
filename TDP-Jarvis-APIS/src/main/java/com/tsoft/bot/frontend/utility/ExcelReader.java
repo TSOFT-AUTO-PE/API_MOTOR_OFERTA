@@ -151,8 +151,6 @@ public class ExcelReader {
 
             Font font = newWorkbook.createFont();
 
-
-
             nextCell.setCellValue(resultText);
 
             if(resultText.contains("true") || resultText.contains("PASS"))

@@ -4,8 +4,6 @@ import com.tsoft.bot.frontend.utility.ExcelReader;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.InputStreamEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 
 import java.io.*;
@@ -14,7 +12,7 @@ import java.util.List;
 
 public class Clase_Servicio {
 
-    private static final String EXCEL_WEB = "services/excel/ServicioJ.xlsx";
+    private static final String EXCEL_WEB = "excel/services/MotorOferta/Servicios_MotorOferta.xlsx";
     private static final String Servicio = "Input";
     private static final String CELDA_ENDPOINT_TOKEN = "Endpoint";
 
